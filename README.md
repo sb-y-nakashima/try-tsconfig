@@ -19,6 +19,9 @@ esnext | ESNext	ESNext で利用可能な追加の API - これは JavaScript �
 出力されるJavaScriptが、どのようにモジュールを読み込むか指定します。  
 https://www.typescriptlang.org/tsconfig/#module  
 基本はesnextでしょうか？バックエンドならcommonjs？
+>--アドバイスいただきました！--  
+>パフォーマンスに違いもありますがケースバイケース。  
+>typescript系のネタだと、yarnはちょっと前までもてはやされてましたが、最近はpnpmも熱いみたいです。
 
 ## strict
 広範囲の型チェック動作が有効になり、プログラムの正確性がより強力に保証されます。  
