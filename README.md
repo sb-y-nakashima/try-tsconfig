@@ -59,7 +59,9 @@ https://www.typescriptlang.org/tsconfig/#noImplicitOverride
 動作させるときにデバッガーが元のTypeScriptソースファイルを表示できるようします。　　
 https://www.typescriptlang.org/tsconfig/#sourceMap
 セキュリティの問題もあるので状況によってtrue、falseを切り替えるかも...
-ViteやNext.jsなどの場合は不要かな...
+ViteやNext.jsなどの場合は不要かな...  
+
+inlineSourceMapと排他なので同時に使用することはできません。
 
 ## forceConsistentCasingInFileNames
 実行されているファイルシステムの大文字と小文字の区別規則に従う  
@@ -76,6 +78,8 @@ https://www.typescriptlang.org/tsconfig/#moduleResolution
 一般的には'node10'(以前は'node'と呼ばれていました)との記事もあるが、  
 新しいNode.jsでは'node16'または'nodenext'を試してとある。  
 Node.js v12 以降は ECMAScript import と CommonJS require の両方をサポートしている。  
+
+nodenextに設定されているときに、moduleオプションもnodenextに設定されている必要があります。
 
 ## experimentalDecorators
 実験的なデコレーター  
